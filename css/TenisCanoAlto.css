@@ -28,32 +28,19 @@ body{
 .TenisContainer {
     display: flex;
     align-items: flex-start;
-    margin: 25px;
-}
-
-.TenisContent {
-    display: flex;
-    align-items: flex-start;
+    margin-left: 25px;
 }
 
 .TenisPrincipal img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-.TenisImgsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+.TenisImgs:hover {
+    background-color: #b5b5b541;
 }
 
-h1 {
-    font-family: Modern;
-    margin-right: 100px; 
-    align-self: flex-start;
-}
-
-.TenisImgs img {
-    width: 32%;
-    margin-bottom: 10px;
+.TituloProduto{
+    margin-right: 300px;
+    color: rgb(118, 118, 118);
 }
