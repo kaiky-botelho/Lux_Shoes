@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Modern;
+    src: url(../fontes/ModesticSans-Bold.ttf);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -14,11 +19,41 @@ body{
     flex-wrap: wrap;
 }
 
-
 .cupomlux {
-
     margin-left: 10px; 
     font-weight: bold;
     border: black 1px dashed;
+} 
 
+.TenisContainer {
+    display: flex;
+    align-items: flex-start;
+    margin: 25px;
+}
+
+.TenisContent {
+    display: flex;
+    align-items: flex-start;
+}
+
+.TenisPrincipal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.TenisImgsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Modern;
+    margin-right: 100px; 
+    align-self: flex-start;
+}
+
+.TenisImgs img {
+    width: 32%;
+    margin-bottom: 10px;
 }
