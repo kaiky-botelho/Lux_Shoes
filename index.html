@@ -1,102 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lux Shoes</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Barra.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lux Shoes</title>
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <div class="Fundo_titulo">
-        <h1 class="titulo">Lux Shoes</h1>
+  <header class="header-bg">
+    <div class="header container">
+      <h1 href="/" class="font-2-xl cor-white"><a href="/">Lux Shoes</a></h1>
+      <nav aria-label="primaria">
+        <ul class="header-menu cor-white font-2-l">
+          <li><a href="./masculino.html" target="_blank">Masculino</a></li>
+          <li><a href="./masculino.html" target="_blank">Feminino</a></li>
+        </ul>
+      </nav>
+      <nav class="header-icones">
+        <ul>
+          <li><a href="#"><img src="./img/icones/lupa-w.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/icones/perfil-w.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/icones/coracao-w.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/icones/carrinho-W.svg" alt=""></a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="navegar">
-        <nav class="Nav_Bar">
-            <ul class="listaNav">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li class="Feminino"><a href="./html/feminino.html">Feminino</a></li>
-                <li class="Masculino"><a href="./html/masculino.html">Masculino</a></li>
-            </ul>
-        </nav>
+  <main class="introducao-bg">
+    <div class="introducao container">
+      <div class="introducao-imagem">
+        <img src="./img/introducao/tenis-introducao.png" alt="">
+      </div>
+      <div class="introducao-conteudo">
+        <h2 class="font-xxl cor-r3">Corre 4</h2>
+        <p class="font-1-xl cor-r3">30% OFF</p>
+        <a href="./tenis/corre4.html" class="botao font-1-s cor-white">VEJA AQUI</a>
+      </div>
     </div>
+  </main>
 
-    <img src="./img/fundo_tenis.jpg" alt="" class="Fundo">
-
-    <div class="container">
-        <div class="box">
-            <h2 style="text-align: right; color: #567c8d; font-family: Titulo;">Bem-vindo à Lux Shoes!</h2>
-            <p>Descubra o mundo da elegância e do conforto com a Lux Shoes, sua loja online de calçados que transforma
-                cada passo em uma experiência única. Oferecemos uma vasta seleção de sapatos, desde os mais sofisticados
-                até os modelos casuais, todos escolhidos com atenção aos detalhes e qualidade. Com a Lux Shoes, você
-                encontra as últimas tendências e estilos para todas as ocasiões, com a conveniência de comprar no
-                conforto da sua casa.
-                Navegue pela nossa coleção e deixe-se encantar pela combinação perfeita de design moderno e conforto
-                inigualável. No Lux Shoes, cada par de sapatos é mais do que um acessório – é uma expressão do seu
-                estilo pessoal. <br>
-                Experimente o luxo a cada passo com a Lux Shoes!</p>
-        </div>
+  <section>
+    <div class="especificacao container">
+      <ul>
+        <li class="especificacao-item">
+          <img src="./img/icones/caminha-R.svg" alt="">
+          <div>
+            <h3 class="font-2-l-b cor-r1">Frete Grátis</h3>
+            <p class="font-2-xs cor-8">em compras acima de R$200</p>
+          </div>
+        </li>
+        <li class="especificacao-item">
+          <img src="./img/icones/dinheiro-r.svg" alt="">
+          <div>
+            <h3 class="font-2-l-b cor-r1">CashBack</h3>
+            <p class="font-2-xs cor-8">8% de dinheiro de volta</p>
+          </div>
+        </li>
+        <li class="especificacao-item">
+          <img src="./img/icones/pagamento-R.svg" alt="">
+          <div>
+            <h3 class="font-2-l-b cor-r1">Pagamento</h3>
+            <p class="font-2-xs cor-8">pagamento seguro</p>
+          </div>
+        </li>
+        <li class="especificacao-item">
+          <img src="./img/icones/suporte-R.svg" alt="">
+          <div>
+            <h3 class="font-2-l-b cor-r1">Suporte</h3>
+            <p class="font-2-xs cor-8">24 Horas</p>
+          </div>
+        </li>
+      </ul>
     </div>
+  </section>
 
-    <h2 class="PromocoesDia">Promoções do Dia</h2>
+  <article class="produtos-bg container">
+    <h2 class="font-2-l-b cor-r1">Produtos</h2>
+    <div class="produtos-conteudo">
+      <ul>
+        <li class="produtos-item cor-8">
+          <a href="./tenis/corre4.html">
+            <span class="font-1-m-b cor-white">30%OFF</span>
+            <img src="./img/Produtos/corre4.jpg" alt="">
+            <h3 class="font-1-m">CORRIDA</h3>
+            <p class="font-1-m">Olympikus Corre 4</p>
+            <div class="preco">
+              <p class="font-2-m">R$384,99</p>
+              <p class="font-1-xs cor-4 sublinhado">R$549,99</p>
+            </div>
+          </a>
+        </li>
 
-    <div class="TenisPromo">
-        <div class="tenis">
-            <div id="container">
-                <img src="./img/Ride_Fila/1.jpg" alt="" class="imgTenis">
-                <div class="fundoDesconto">
-                    <h4 class="desconto">10% OFF</h4>
-                </div>
-                <p>Tênis Ride Fila Off White</p>
-                <p class="frete">Frete Grátis</p>
-                <p class="precoSemDesc">R$ 300,00</p>
-                <p class="precoComDesc">R$ 270,00</p>
-                <button class="comprar"><img src="./img/carrinho-de-compras.png" alt="" class="icon"><a href="./html/TenisCano.html" class="comprarAgora">Comprar Agora</a></button>
+        <li class="produtos-item cor-8">
+          <a href="./tenis/deportivo.html">
+            <img src="./img/Produtos/Deportivo.jpg" alt="">
+            <h3 class="font-1-m">FUTEBOL</h3>
+            <p class="font-1-m">Chuteira Deportivo</p>
+            <div class="preco">
+              <p class="font-2-m">R$199,99</p>
             </div>
-        </div>
-        <div class="tenis">
-            <div id="container">
-                <img src="./img/Tenis_Cano_Baixao/1.WEBP" alt="" class="imgTenis">
-                <div class="fundoDesconto">
-                    <h4 class="desconto">5% OFF</h4>
-                </div>
-                <p>Tênis Cano Baixo com Recortes Branco</p>
-                <p class="frete">Frete Grátis</p>
-                <p class="precoSemDesc">R$ 400,00</p>
-                <p class="precoComDesc">R$ 380,00</p>
-                <button class="comprar"><img src="./img/carrinho-de-compras.png" alt="" class="icon"><a href="./html/TenisCanoBaixo.html" class="comprarAgora">Comprar Agora</a></button>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/Space.html">
+            <span class="font-1-m-b cor-white">10%OFF</span>
+            <img src="./img/Produtos/Space4.jpg" alt="">
+            <h3 class="font-1-m">CAMINHADA</h3>
+            <p class="font-1-m">Mizuno Space 4</p>
+            <div class="preco">
+              <p class="font-2-m">R$197,99</p>
+              <p class="font-1-xs cor-4 sublinhado">R$219,99</p>
             </div>
-        </div>
-        <div class="tenis">
-            <div id="container">
-                <img src="./img/Tenis_Plataforma/1.webp" alt="" class="imgTenis">
-                <div class="fundoDesconto">
-                    <h4 class="desconto">15% OFF</h4>
-                </div>
-                <p>Tênis Plataforma Cano Baixo com Recortes Preto</p>
-                <p class="frete">Frete Grátis</p>
-                <p class="precoSemDesc">R$ 290,00</p>
-                <p class="precoComDesc">R$ 246,50</p>
-                <button class="comprar"><img src="./img/carrinho-de-compras.png" alt="" class="icon"><a href="./html/TenisCanoBaixoPlataforma.html" class="comprarAgora">Comprar Agora</a></button>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/Armour.html">
+            <span class="font-1-m-b cor-white">15%OFF</span>
+            <img src="./img/Produtos/armorSpawn3.jpg" alt="">
+            <h3 class="font-1-m">BASQUETE</h3>
+            <p class="font-1-m">Under Armour Spawn 3</p>
+            <div class="preco">
+              <p class="font-2-m">R$340,00</p>
+              <p class="font-1-xs cor-4 sublinhado">R$391,00</p>
             </div>
-        </div>
-        <div class="tenis">
-            <div id="container">
-                <img src="./img/TenisVulcan/1.webp" alt="" class="imgTenis">
-                <div class="fundoDesconto">
-                    <h4 class="desconto">5% OFF</h4>
-                </div>
-                <p>Tênis Street Vulcan com Recortes Marrom Médio</p>
-                <p class="frete">Frete Grátis</p>
-                <p class="precoSemDesc">R$ 220,00</p>
-                <p class="precoComDesc">R$ 209,00</p>
-                <button class="comprar"><img src="./img/carrinho-de-compras.png" alt="" class="icon"><a href="./html/TenisVulcan.html" class="comprarAgora">Comprar Agora</a></button>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/court.html">
+            <img src="./img/Produtos/Curt.png" alt="">
+            <h3 class="font-1-m">CASUAL</h3>
+            <p class="font-1-m">Adidas Grand Court</p>
+            <div class="preco">
+              <p class="font-2-m">R$298,80</p>
             </div>
-        </div>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/duramo.html">
+            <img src="./img/Produtos/RC.jpg" alt="">
+            <h3 class="font-1-m">TREINO</h3>
+            <p class="font-1-m">Adidas Duramo Rc</p>
+            <div class="preco">
+              <p class="font-2-m">R$298,80</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/ultimashow.html">
+            <img src="./img/Produtos/ultimashow.jpg" alt="">
+            <h3 class="font-1-m">TREINO</h3>
+            <p class="font-1-m">Adidas Ultimashow </p>
+            <div class="preco">
+              <p class="font-2-m">R$328,90</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="produtos-item cor-8">
+          <a href="./tenis/reno.html">
+            <img src="./img/Produtos/FilaReno.jpg" alt="">
+            <h3 class="font-1-m">CASUAL</h3>
+            <p class="font-1-m">Fila Renno Sport</p>
+            <div class="preco">
+              <p class="font-2-m">R$359,99</p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
     </div>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <h1 class="font-2-xl cor-white">Lux Shoes</h1>
+      <div class="footer-contatos">
+        <h3 class="font-2-l-b cor-0">Contatos</h3>
+        <ul class="font-2-m cor-0">
+          <li><a href="tel:+55119-4321">+55 (11) 9 98765-4321</a></li>
+          <li><a href="mailto:contato@luxshoes.com">contato@luxshoes.com</a></li>
+          <li> Av. das Estrelas, 789 </li>
+          <li>São Paulo - Sp</li>
+        </ul>
+      </div>
+      <div class="foooter-informacoes">
+        <h3 class="font-2-l-b cor-0">Informações</h3>
+        <ul class="font-2-m cor-0">
+          <li><a href="/">Sobre Nós</a></li>
+          <li><a href="/">Política de Troca</a></li>
+          <li><a href="/">Termos de Uso</a></li>
+        </ul>
+        </ul>
+      </div>
+      <p class="footer-copy font-2-m cor-1">Lux Shoes © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>

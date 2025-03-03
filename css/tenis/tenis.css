@@ -1,0 +1,176 @@
+.tenis {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  grid-template-areas: 
+  "conteudo imagem informacoes";
+}
+
+.tenis-conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  grid-area: conteudo;
+}
+
+.tenis-conteudo span{
+  display: inline-block;
+  max-width: max-content;
+  padding: 10px;
+  background-color: var(--cor-v);
+  text-transform: uppercase;
+
+}
+
+.tamanhos-container ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tamanhos-container li{
+  display: flex;
+  border: 1px solid var(--cor-3);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tamanhos-container li.selecionado{
+background-color: var(--cor-r1);
+}
+
+.tamanhos-container li:hover{
+  background-color: var(--cor-r1);
+  color: var(--cor-1);
+}
+
+.imagem-produto {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  gap: 8px;
+  grid-area: imagem;
+}
+
+.outras-imagens img.ativa {
+  border: 2px solid var(--cor-r1);
+  opacity: 0.7;
+}
+
+.outras-imagens img {
+  border-radius: 8px;
+  width: 70%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.imagem-principal{
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.imagem-principal img:hover{
+  transform: scale(1.5);
+}
+
+.informacoes-tenis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  grid-area: informacoes;
+}
+
+.informacoes-tenis li{
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+.informacoes-tenis li span{
+  color: var(--cor-b);
+}
+.informacoes-tenis li:nth-child(odd){
+  background-color: var(--cor-0);
+}
+
+.avalicao-tenis{
+  display: flex;
+  align-items: center;
+}
+
+.input-frete{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type ="text"]{
+  width: 220px;
+  height: 25px;
+  border: 2px solid var(--cor-v);
+  border-radius: 4px;
+}
+
+input[type="text"]:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(118, 212, 171, 0.368)
+}
+
+#tenis .input-frete .botao{
+  background-color: var(--cor-v);
+}
+
+@media(max-width:1000px) {
+  .tenis {
+    grid-template-areas: 
+    "imagem"
+    "informacoes"
+    "conteudo";
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .informacoes-tenis ul{
+    display: none;
+  }
+}
+
+@media(max-width:800px) {
+  .tenis {
+    grid-template-columns: 1fr
+  }
+  
+  .imagem-produto {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outras-imagens {
+    display: flex;
+    justify-content: center;
+  }
+  .outras-imagens img {
+    width: 15%;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  .imagem-principal img:hover{
+    transform: scale(1);
+  }
+}
+
+@media(max-width:800px) {
+  .tamanhos-container ul{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

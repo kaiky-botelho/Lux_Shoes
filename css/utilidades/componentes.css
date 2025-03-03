@@ -1,0 +1,21 @@
+.container{
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.botao{
+  display: inline-block;
+  background-color: var(--cor-a);
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  max-width: max-content;
+}
+
+.sublinhado{
+  text-decoration: line-through;
+}

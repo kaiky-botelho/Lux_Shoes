@@ -1,0 +1,44 @@
+.sobre-tenis{
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.sobre-tenis h4{
+  background-color: var(--cor-0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+.sobre-tenis p {
+    padding: 20px;
+}
+
+.caracteristica{
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 40px;
+}
+
+.caracteristica li{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.caracteristica li::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--cor-2);
+  position: absolute;
+}
+
+@media(max-width:600px){
+  .caracteristica{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

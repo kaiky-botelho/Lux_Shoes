@@ -1,0 +1,19 @@
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/*Utilidades*/
+
+@import "./utilidades/componentes.css";
+
+/*Home*/
+@import "./home/introducao.css";
+@import "./home/especificacao.css";
+@import "./home/produtos.css";
+
+/*tenis*/
+@import "./tenis/tenis.css";
+@import "./tenis/sobre.css";

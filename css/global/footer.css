@@ -1,0 +1,33 @@
+.footer-bg{
+  background-color: var(--cor-r1);
+}
+
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer p{
+  grid-column: 1/-1;
+}
+
+.footer li{
+  margin-bottom: 10px;
+}
+
+.footer-contatos li:nth-child(2)::after {
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background: var(--cor-2);
+}
+
+@media (max-width:800px){
+  .footer{
+    grid-template-columns: 1fr;
+  }
+}
