@@ -23,6 +23,6 @@ O site foi projetado seguindo princípios de UI/UX para proporcionar uma navega�
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/lux-shoes.git
+   git clone https://github.com/kaiky-botelho/Lux_Shoes
    ```
 2. Abra o arquivo `index.html` no seu navegador.
